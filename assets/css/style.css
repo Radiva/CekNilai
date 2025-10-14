@@ -1,0 +1,11 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+.sidebar .nav-link {
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.sidebar .nav-link:hover {
+  background-color: rgba(255,255,255,0.2);
+}
