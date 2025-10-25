@@ -1,6 +1,6 @@
 <?php
-include "config.php";
-include "header.php";
+include "../config/config.php";
+include "../includes/header.php";
 
 $mapel_id = $_GET['mapel_id'];
 ?>
@@ -18,4 +18,4 @@ $mapel_id = $_GET['mapel_id'];
     <button type="submit" class="btn btn-success">Simpan</button>
   </form>
 </div>
-<?php include "footer.php"; ?>
+<?php include "../includes/footer.php"; ?>

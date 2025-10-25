@@ -1,6 +1,6 @@
 <?php
-include "config.php";
-include "header.php";
+include "../config/config.php";
+include "../includes/header.php";
 
 $kelas = mysqli_query($conn, "SELECT * FROM kelas ORDER BY nama_kelas ASC");
 ?>
@@ -31,4 +31,4 @@ $kelas = mysqli_query($conn, "SELECT * FROM kelas ORDER BY nama_kelas ASC");
         <button type="submit" class="btn btn-success">Simpan</button>
     </form>
 </div>
-<?php include "footer.php"; ?>
+<?php include "../includes/footer.php"; ?>

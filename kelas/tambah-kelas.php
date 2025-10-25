@@ -1,6 +1,6 @@
 <?php 
-include "header.php";
-include "config.php"; 
+include "../includes/header.php";
+include "../config/config.php"; 
 ?>
 <div class="container mt-4">
   <h3>Tambah Kelas</h3>
@@ -15,5 +15,5 @@ include "config.php";
   </form>
 </div>
 <?php 
-include "footer.php";
+include "../includes/footer.php";
 ?>

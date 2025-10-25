@@ -1,6 +1,6 @@
 <?php
-include "config.php";
-include "header.php";
+include "../config/config.php";
+include "../includes/header.php";
 
 $id = $_GET['id'];
 $data = mysqli_query($conn, "SELECT * FROM mapel WHERE id=$id");
@@ -17,4 +17,4 @@ $m = mysqli_fetch_assoc($data);
     <button type="submit" class="btn btn-primary">Update</button>
   </form>
 </div>
-<?php include "footer.php"; ?>
+<?php include "../includes/footer.php"; ?>

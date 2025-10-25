@@ -1,6 +1,6 @@
 <?php
-include "config.php";
-include "header.php";
+include "../config/config.php";
+include "../includes/header.php";
 
 $id = $_GET['id'];
 $mapel_id = $_GET['mapel_id'];
@@ -21,4 +21,4 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM sub_nilai WHERE id
     <button type="submit" class="btn btn-primary">Update</button>
   </form>
 </div>
-<?php include "footer.php"; ?>
+<?php include "../includes/footer.php"; ?>

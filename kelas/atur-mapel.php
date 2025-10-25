@@ -1,10 +1,6 @@
 <?php
-include "header.php";
-include "config.php";
-if (!isset($_SESSION['login'])) {
-    header("Location: index.php?error=Silakan login dulu");
-    exit;
-}
+include "../includes/header.php";
+include "../config/config.php";
 
 $kelas_id = $_GET['kelas_id'] ?? 0;
 
@@ -52,4 +48,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <button type="submit">Simpan</button>
 </form>
 </div>
-<?php include "footer.php"; ?>
+<?php include "../includes/footer.php"; ?>

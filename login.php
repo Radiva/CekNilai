@@ -1,4 +1,4 @@
-<?php include "config.php"; 
+<?php include "config/config.php"; 
 session_start();
 
 // Jika sudah login → langsung ke dashboard

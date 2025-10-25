@@ -1,6 +1,6 @@
 <?php
-include "config.php";
-include "header.php";
+include "../config/config.php";
+include "../includes/header.php";
 
 $mapel_id = $_GET['mapel_id'];
 $mapel = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM mapel WHERE id=$mapel_id"));
@@ -32,4 +32,4 @@ $sub = mysqli_query($conn, "SELECT * FROM sub_nilai WHERE mapel_id=$mapel_id");
   </table>
   <a href="mapel.php" class="btn btn-secondary">Kembali</a>
 </div>
-<?php include "footer.php"; ?>
+<?php include "../includes/footer.php"; ?>

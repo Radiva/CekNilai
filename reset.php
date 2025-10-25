@@ -1,5 +1,5 @@
 <?php
-include "config.php";
+include "config/config.php";
 session_start();
 
 // Cek apakah sudah login admin

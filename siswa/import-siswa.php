@@ -1,6 +1,6 @@
 <?php
-include "config.php";
-include "header.php";
+include "../config/config.php";
+include "../includes/header.php";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['file']['tmp_name'])) {
     $file = $_FILES['file']['tmp_name'];

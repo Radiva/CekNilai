@@ -1,4 +1,4 @@
-<?php include "header.php"; ?>
+<?php include "../includes/header.php"; ?>
 <div class="container mt-4">
   <h3>Tambah Mata Pelajaran</h3>
   <form method="post" action="proses-mapel.php?aksi=tambah">
@@ -9,4 +9,4 @@
     <button type="submit" class="btn btn-success">Simpan</button>
   </form>
 </div>
-<?php include "footer.php"; ?>
+<?php include "../includes/footer.php"; ?>

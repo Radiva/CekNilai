@@ -1,6 +1,6 @@
 <?php
-include "header.php";
-include "config.php";
+include "../includes/header.php";
+include "../config/config.php";
 $id = $_GET['id'];
 $data = mysqli_query($conn, "SELECT * FROM kelas WHERE id=$id");
 $kelas = mysqli_fetch_assoc($data);
@@ -20,5 +20,5 @@ $kelas = mysqli_fetch_assoc($data);
 </div>
 
 <?php
-include "footer.php";
+include "../includes/footer.php";
 ?>

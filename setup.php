@@ -1,5 +1,5 @@
 <?php
-include "config.php";
+include "config/config.php";
 
 // Cek apakah tabel admin sudah ada
 $check = mysqli_query($conn, "SHOW TABLES LIKE 'users'");

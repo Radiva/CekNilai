@@ -1,10 +1,6 @@
 <?php
-include "header.php";
-include "config.php";
-if (!isset($_SESSION['login'])) {
-    header("Location: index.php?error=Silakan login dulu");
-    exit;
-}
+include "../config/config.php";
+include "../includes/header.php";
 
 // Ambil data kelas
 $result = mysqli_query($conn, "SELECT * FROM kelas ORDER BY id DESC");
@@ -40,4 +36,4 @@ $result = mysqli_query($conn, "SELECT * FROM kelas ORDER BY id DESC");
     </tbody>
   </table>
 </div>
-<?php include "footer.php"; ?>
+<?php include "../includes/footer.php"; ?>

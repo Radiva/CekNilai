@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include 'config/config.php';
 
 $error = '';
 $data_siswa = null;

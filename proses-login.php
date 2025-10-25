@@ -1,5 +1,5 @@
 <?php
-include "config.php";
+include "config/config.php";
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $username = mysqli_real_escape_string($conn, $_POST['username']);
@@ -21,14 +21,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             header("Location: dashboard.php");
             exit;
         } else {
-            header("Location: index.php?error=Password salah");
+            header("Location: login.php?error=Password salah");
             exit;
         }
     } else {
-        header("Location: index.php?error=Username tidak ditemukan");
+        header("Location: login.php?error=Username tidak ditemukan");
         exit;
     }
 } else {
-    header("Location: index.php");
+    header("Location: login.php");
     exit;
 }

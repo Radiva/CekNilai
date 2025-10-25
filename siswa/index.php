@@ -1,6 +1,6 @@
 <?php
-include "config.php";
-include "header.php";
+include "../config/config.php";
+include "../includes/header.php";
 
 $siswa = mysqli_query($conn, "
     SELECT s.id, s.nis, s.nama, s.tgl_lahir, k.nama_kelas 
@@ -40,4 +40,4 @@ $siswa = mysqli_query($conn, "
         <?php endwhile; ?>
     </table>
 </div>
-<?php include "footer.php"; ?>
+<?php include "../includes/footer.php"; ?>

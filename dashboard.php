@@ -1,6 +1,5 @@
 <?php 
-include "header.php"; 
-include "config.php";
+include "includes/header.php"; 
 
 // hitung jumlah data
 $jml_kelas = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) as jml FROM kelas"))['jml'];
@@ -55,4 +54,4 @@ $jml_nilai = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) as jml FROM
     </div>
   </div>
 </div>
-<?php include "footer.php"; ?>
+<?php include "includes/footer.php"; ?>

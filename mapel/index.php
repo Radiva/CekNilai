@@ -1,6 +1,6 @@
 <?php
-include "config.php";
-include "header.php";
+include "../config/config.php";
+include "../includes/header.php";
 
 $mapel = mysqli_query($conn, "SELECT * FROM mapel ORDER BY nama_mapel ASC");
 ?>
@@ -26,4 +26,4 @@ $mapel = mysqli_query($conn, "SELECT * FROM mapel ORDER BY nama_mapel ASC");
     <?php endwhile; ?>
   </table>
 </div>
-<?php include "footer.php"; ?>
+<?php include "../includes/footer.php"; ?>
